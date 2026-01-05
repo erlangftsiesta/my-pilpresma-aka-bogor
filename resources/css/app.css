@@ -1,3 +1,8 @@
+@import "./institutional-theme.css";
+@import "./elegant-theme.css";
+@import "./office-theme.css";
+@import "./friendly-theme.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
