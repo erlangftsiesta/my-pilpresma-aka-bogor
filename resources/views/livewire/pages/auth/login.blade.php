@@ -24,45 +24,96 @@ new #[Layout('layouts.guest')] class extends Component
     }
 }; ?>
 
-<div>
-    <form wire:submit="login">
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="username" :value="__('username')" />
-            <x-text-input wire:model="form.username" id="username" class="block mt-1 w-full" type="text" name="username" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('form.username')" class="mt-2" />
+<div class="elegant-bg flex items-center justify-center min-h-screen px-4 py-12">
+    <div class="w-full max-w-md">
+        <!-- Added elegant header section with title and description -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-semibold text-soft-navy mb-2">Welcome Back</h1>
+            <p class="text-pastel-blue text-sm">Sign in to access your account</p>
         </div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+        <!-- Applied elegant-card styling to form container -->
+        <div class="elegant-card p-8 md:p-10">
+            <form wire:submit="login" class="space-y-6">
+                <!-- Email/Username Address -->
+                <div>
+                    <label for="username" class="block text-sm font-medium text-soft-navy mb-2">
+                        {{ __('Username') }}
+                    </label>
+                    <input 
+                        wire:model="form.username" 
+                        id="username" 
+                        class="input-elegant w-full" 
+                        type="text" 
+                        name="username" 
+                        required 
+                        autofocus 
+                        autocomplete="username"
+                        placeholder="Enter your username"
+                    />
+                    <x-input-error :messages="$errors->get('form.username')" class="mt-2 text-sm text-red-500" />
+                </div>
 
-            <x-text-input wire:model="form.password" id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
+                <!-- Password -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-soft-navy mb-2">
+                        {{ __('Password') }}
+                    </label>
+                    <input 
+                        wire:model="form.password" 
+                        id="password" 
+                        class="input-elegant w-full"
+                        type="password"
+                        name="password"
+                        required 
+                        autocomplete="current-password"
+                        placeholder="Enter your password"
+                    />
+                    <x-input-error :messages="$errors->get('form.password')" class="mt-2 text-sm text-red-500" />
+                </div>
 
-            <x-input-error :messages="$errors->get('form.password')" class="mt-2" />
-        </div>
+                <!-- Styled remember me checkbox with elegant appearance -->
+                <div class="flex items-center justify-between">
+                    <label for="remember" class="inline-flex items-center cursor-pointer">
+                        <input 
+                            wire:model="form.remember" 
+                            id="remember" 
+                            type="checkbox" 
+                            name="remember"
+                            class="w-4 h-4 border-champagne-gold text-champagne-gold rounded focus:ring-2 focus:ring-pastel-blue"
+                        >
+                        <span class="ms-2 text-sm text-soft-navy">{{ __('Remember me') }}</span>
+                    </label>
 
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember" class="inline-flex items-center">
-                <input wire:model="form.remember" id="remember" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-            </label>
-        </div>
+                    @if (Route::has('password.request'))
+                        <a 
+                            class="text-sm text-champagne-gold hover:text-soft-navy transition-colors duration-300 font-medium" 
+                            href="{{ route('password.request') }}" 
+                            wire:navigate
+                        >
+                            {{ __('Forgot password?') }}
+                        </a>
+                    @endif
+                </div>
 
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}" wire:navigate>
-                    {{ __('Forgot your password?') }}
+                <!-- Applied btn-elegant styling to login button with full width -->
+                <button 
+                    type="submit" 
+                    class="btn-elegant w-full mt-8 bg-gradient-to-r from-champagne-gold to-pastel-blue text-soft-navy font-semibold shadow-elegant hover:shadow-elegant-lg"
+                >
+                    {{ __('Sign In') }}
+                </button>
+            </form>
+
+            <!-- Added elegant divider and signup link -->
+            <div class="divider-elegant"></div>
+
+            <p class="text-center text-sm text-soft-navy">
+                {{ __('New to our platform?') }}
+                <a href="#" class="font-semibold text-champagne-gold hover:text-pastel-blue transition-colors duration-300">
+                    {{ __('Create an account') }}
                 </a>
-            @endif
-
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
-            </x-primary-button>
+            </p>
         </div>
-    </form>
+    </div>
 </div>

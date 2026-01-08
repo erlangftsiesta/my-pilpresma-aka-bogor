@@ -1,7 +1,5 @@
-@import "./institutional-theme.css";
 @import "./elegant-theme.css";
-@import "./office-theme.css";
-@import "./friendly-theme.css";
+@import "./elegant-login.css";
 
 @tailwind base;
 @tailwind components;

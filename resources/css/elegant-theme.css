@@ -1,25 +1,26 @@
 /* Elegant Calm Corporate Theme - Blue Gradient & Gold Accents */
 
 :root {
-  /* Primary Colors */
-  --soft-navy: #2c3e50;
-  --pastel-blue: #a8c5dd;
-  --light-blue: #dce9f5;
-  --champagne-gold: #e8d7b8;
-  --off-white: #fafbfc;
-  --deep-blue: #1a2332;
+    /* Primary Colors */
+    --soft-navy: #2c3e50;
+    --pastel-blue: #a8c5dd;
+    --light-blue: #dce9f5;
+    --champagne-gold: #e8d7b8;
+    --off-white: #fafbfc;
+    --deep-blue: #1a2332;
 
-  /* Shadows - Soft and elegant */
-  --shadow-elegant: 0 8px 30px rgba(44, 62, 80, 0.08);
-  --shadow-elegant-lg: 0 20px 60px rgba(44, 62, 80, 0.12);
+    /* Shadows - Soft and elegant */
+    --shadow-elegant: 0 8px 30px rgba(44, 62, 80, 0.08);
+    --shadow-elegant-lg: 0 20px 60px rgba(44, 62, 80, 0.12);
 }
 
 /* Typography - Refined and readable */
 body {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--soft-navy);
-  line-height: 1.7;
-  font-weight: 400;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    color: var(--soft-navy);
+    line-height: 1.7;
+    font-weight: 400;
 }
 
 h1,
@@ -28,115 +29,132 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: var(--soft-navy);
-  line-height: 1.3;
-  letter-spacing: -0.02em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--soft-navy);
+    line-height: 1.3;
+    letter-spacing: -0.02em;
 }
 
 /* Minimal Card Styles */
 .elegant-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
-  border-radius: 1.5rem;
-  border: 1px solid rgba(232, 215, 184, 0.4);
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(232, 215, 184, 0.4);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .elegant-card:hover {
-  box-shadow: var(--shadow-elegant-lg);
-  border-color: var(--champagne-gold);
-  transform: translateY(-4px);
+    box-shadow: var(--shadow-elegant-lg);
+    border-color: var(--champagne-gold);
+    transform: translateY(-4px);
 }
 
 /* Flat Buttons with Thin Gold Borders */
 .btn-elegant {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 2rem;
-  border: 1px solid var(--champagne-gold);
-  border-radius: 9999px;
-  color: var(--soft-navy);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  background: transparent;
-  cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border: 1px solid var(--champagne-gold);
+    border-radius: 9999px;
+    color: var(--soft-navy);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background: transparent;
+    cursor: pointer;
 }
 
 .btn-elegant:hover {
-  background-color: rgba(232, 215, 184, 0.1);
-  border-color: var(--champagne-gold);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(232, 215, 184, 0.2);
+    background-color: rgba(232, 215, 184, 0.1);
+    border-color: var(--champagne-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(232, 215, 184, 0.2);
 }
 
 /* Smooth Gradient Background */
 .elegant-bg {
-  background: linear-gradient(180deg, var(--light-blue) 0%, var(--deep-blue) 100%);
-  min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        var(--light-blue) 0%,
+        var(--deep-blue) 100%
+    );
+    min-height: 100vh;
 }
 
 /* Hero Section */
 .hero-elegant {
-  padding: 6rem 1.5rem;
-  text-align: center;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
-  backdrop-filter: blur(20px);
+    padding: 6rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.7) 100%
+    );
+    backdrop-filter: blur(20px);
 }
 
 /* Large Spacing - Breathing room */
 .spacing-elegant {
-  padding: 5rem 1.5rem;
+    padding: 5rem 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .spacing-elegant {
-    padding: 6rem 2rem;
-  }
+    .spacing-elegant {
+        padding: 6rem 2rem;
+    }
 }
 
 /* Minimal Divider */
 .divider-elegant {
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--champagne-gold), transparent);
-  opacity: 0.4;
-  margin: 3rem 0;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--champagne-gold),
+        transparent
+    );
+    opacity: 0.4;
+    margin: 3rem 0;
 }
 
 /* Premium Badge */
 .badge-premium {
-  background: linear-gradient(135deg, var(--champagne-gold), var(--pastel-blue));
-  color: var(--soft-navy);
-  padding: 0.5rem 1.25rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 0.02em;
+    background: linear-gradient(
+        135deg,
+        var(--champagne-gold),
+        var(--pastel-blue)
+    );
+    color: var(--soft-navy);
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.02em;
 }
 
 /* Refined Input Fields */
 .input-elegant {
-  padding: 1rem 1.5rem;
-  border: 1px solid var(--champagne-gold);
-  border-radius: 0.75rem;
-  background: white;
-  color: var(--soft-navy);
-  font-family: "Open Sans", sans-serif;
-  transition: all 0.3s ease;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--champagne-gold);
+    border-radius: 0.75rem;
+    background: white;
+    color: var(--soft-navy);
+    font-family: "Open Sans", sans-serif;
+    transition: all 0.3s ease;
 }
 
 .input-elegant:focus {
-  outline: none;
-  border-color: var(--pastel-blue);
-  box-shadow: 0 0 0 3px rgba(168, 197, 221, 0.1);
+    outline: none;
+    border-color: var(--pastel-blue);
+    box-shadow: 0 0 0 3px rgba(168, 197, 221, 0.1);
 }
 
 /* Calm, elegant transitions */
 * {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

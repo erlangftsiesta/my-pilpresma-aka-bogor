@@ -1,0 +1,81 @@
+/* Enhanced Elegant Theme for Login Form */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Open+Sans:wght@400;500;600&display=swap");
+
+:root {
+    --soft-navy: #2c3e50;
+    --pastel-blue: #a8c5dd;
+    --light-blue: #dce9f5;
+    --champagne-gold: #e8d7b8;
+    --off-white: #fafbfc;
+    --deep-blue: #1a2332;
+    --shadow-elegant: 0 8px 30px rgba(44, 62, 80, 0.08);
+    --shadow-elegant-lg: 0 20px 60px rgba(44, 62, 80, 0.12);
+}
+
+/* Smooth background gradient */
+.elegant-bg {
+    background: linear-gradient(180deg, #dce9f5 0%, #1a2332 100%);
+    min-height: 100vh;
+}
+
+/* Refined form container */
+.elegant-card {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(232, 215, 184, 0.5);
+    box-shadow: var(--shadow-elegant);
+}
+
+/* Input styling */
+.input-elegant {
+    padding: 0.875rem 1.25rem;
+    border: 1px solid #e0e7f0;
+    border-radius: 0.75rem;
+    background: #fafbfc;
+    color: var(--soft-navy);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.input-elegant:focus {
+    outline: none;
+    border-color: var(--champagne-gold);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(168, 197, 221, 0.1);
+}
+
+/* Button styling */
+.btn-elegant {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.75rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Divider */
+.divider-elegant {
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--champagne-gold),
+        transparent
+    );
+    opacity: 0.3;
+    margin: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .elegant-card {
+        border-radius: 1.25rem;
+    }
+}
