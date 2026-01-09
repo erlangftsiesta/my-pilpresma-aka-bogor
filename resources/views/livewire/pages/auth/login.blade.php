@@ -25,16 +25,25 @@ new #[Layout('layouts.guest')] class extends Component
 }; ?>
 
 <div class="elegant-bg flex items-center justify-center min-h-screen px-4 py-12">
-    <div class="w-full max-w-md">
-        <!-- Added elegant header section with title and description -->
-        <div class="text-center mb-12">
-            <h1 class="text-3xl font-semibold text-soft-navy mb-2">Welcome Back</h1>
-            <p class="text-pastel-blue text-sm">Sign in to access your account</p>
-        </div>
+        <div class="w-full max-w-md">
+            <!-- Added elegant header section with title and description -->
+<div class="rounded-xl relative overflow-hidden mb-6">
+        <img 
+            src="{{ asset('images/login-banner-cover.jpg') }}" 
+            alt="PIPRESMA Header" 
+            class="w-full h-52 sm:h-72 md:h-96 lg:h-[28rem] object-cover"
+        />
+        
+        <!-- Gradient overlay biar elegan & nyambung ke background -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70"></div>
+    </div>
 
         <!-- Applied elegant-card styling to form container -->
         <div class="elegant-card p-8 md:p-10">
             <form wire:submit="login" class="space-y-6">
+                <center>
+                    <h1 class="bg-gradient-to-r from-blue-500 to-blue-600 from-purple-500 to-purple-600 font-bold text-2xl">MyPilpresma</h1>
+                </center>
                 <!-- Email/Username Address -->
                 <div>
                     <label for="username" class="block text-sm font-medium text-soft-navy mb-2">
@@ -86,13 +95,13 @@ new #[Layout('layouts.guest')] class extends Component
                     </label>
 
                     @if (Route::has('password.request'))
-                        <a 
+                        <!-- <a 
                             class="text-sm text-champagne-gold hover:text-soft-navy transition-colors duration-300 font-medium" 
                             href="{{ route('password.request') }}" 
                             wire:navigate
                         >
                             {{ __('Forgot password?') }}
-                        </a>
+                        </a> -->
                     @endif
                 </div>
 
@@ -104,16 +113,6 @@ new #[Layout('layouts.guest')] class extends Component
                     {{ __('Sign In') }}
                 </button>
             </form>
-
-            <!-- Added elegant divider and signup link -->
-            <div class="divider-elegant"></div>
-
-            <p class="text-center text-sm text-soft-navy">
-                {{ __('New to our platform?') }}
-                <a href="#" class="font-semibold text-champagne-gold hover:text-pastel-blue transition-colors duration-300">
-                    {{ __('Create an account') }}
-                </a>
-            </p>
         </div>
     </div>
 </div>
