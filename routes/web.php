@@ -36,7 +36,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 // Routes untuk Pemilih (User) - SEMUA pake middleware voting.period
-Route::middleware(['auth', 'role:pemilih', 'voting.period'])->group(function () {
+Route::middleware(['auth', 'role:pemilih', 'voting.period', 'already.voted'])->group(function () {
     Route::get('/candidates', CandidateList::class)->name('candidates');
     Route::get('/candidate/{id}', CandidateDetail::class)->name('candidate.detail');
     Route::get('/voting', VotingPage::class)->name('voting.page');
@@ -47,11 +47,15 @@ Route::middleware(['auth', 'role:pemilih'])->group(function () {
     Route::get('/voting-closed', function () {
         return view('voting-closed');
     })->name('voting.closed');
-    
+});
+
+// Route voting closed & thankyou - TANPA middleware voting.period biar bisa diakses
+Route::middleware(['auth', 'role:pemilih'])->group(function () {
     Route::get('/thankyou', function () {
         return view('thankyou');
     })->name('voting.thankyou');
 });
+
 
 Route::post('/logout', function () {
     Auth::logout();

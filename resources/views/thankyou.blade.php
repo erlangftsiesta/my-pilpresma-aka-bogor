@@ -98,11 +98,6 @@
                             </button>
                         </form>
                     </div>
-                    
-                    <!-- Footer Note -->
-                    <p class="text-sm text-gray-500 mt-8">
-                        Anda akan otomatis logout setelah menggunakan hak suara
-                    </p>
                 </div>
             </div>
         </div>

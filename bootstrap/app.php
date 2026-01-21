@@ -14,6 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'role' => \App\Http\Middleware\CheckRole::class,
             'voting.period' => \App\Http\Middleware\CheckVotingPeriod::class,
+            'already.voted' => \App\Http\Middleware\AlreadyVoted::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

@@ -92,7 +92,7 @@
                         <svg class="w-6 h-6 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <span class="relative z-10">Pilih Kandidat</span>
+                        <span class="relative z-10">Voting</span>
                     </a>
                     <a href="{{ route('candidates') }}" 
                        class="flex-1 bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-3 text-lg">
@@ -106,7 +106,7 @@
         </div>
         
         <!-- Quick Info Cards Below -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+        <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
             <div class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-shadow">
                 <div class="flex items-center gap-3">
                     <div class="p-3 bg-blue-100 rounded-lg">
@@ -148,6 +148,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
