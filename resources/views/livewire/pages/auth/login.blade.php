@@ -25,26 +25,27 @@ new #[Layout('layouts.guest')] class extends Component
 }; ?>
 
 <div class="elegant-bg flex items-center justify-center min-h-screen px-4 py-12">
-        <div class="w-full max-w-md">
-            <!-- Added elegant header section with title and description -->
-<div class="rounded-xl relative overflow-hidden mb-6">
-        <img 
-            src="{{ asset('images/login-banner-cover.jpg') }}" 
-            alt="PIPRESMA Header" 
-            class="w-full h-52 sm:h-72 md:h-96 lg:h-[28rem] object-cover"
-        />
-        
-        <!-- Gradient overlay biar elegan & nyambung ke background -->
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70"></div>
-    </div>
+    <div class="w-full max-w-2xl">
+        <!-- Header dengan gambar full width -->
+<div class="relative overflow-hidden mb-6 bg-gray-900 rounded-lg">
+    <img 
+        src="{{ asset('images/login-banner-cover.jpg') }}" 
+        alt="PIPRESMA Header" 
+        class="w-full h-auto object-contain"
+    />
+    
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70"></div>
+</div>
 
-        <!-- Applied elegant-card styling to form container -->
-        <div class="elegant-card p-8 md:p-10">
+        <!-- Form container dengan lebar lebih besar -->
+        <div class="elegant-card p-8 md:p-12">
             <form wire:submit="login" class="space-y-6">
                 <center>
-                    <h1 class="bg-gradient-to-r from-blue-500 to-blue-600 from-purple-500 to-purple-600 font-bold text-2xl">MyPilpresma</h1>
+                    <h1 class="font-bold text-3xl mb-2">MyPilpresma</h1>
                 </center>
-                <!-- Email/Username Address -->
+                
+                <!-- Username -->
                 <div>
                     <label for="username" class="block text-sm font-medium text-soft-navy mb-2">
                         {{ __('Username') }}
@@ -81,7 +82,7 @@ new #[Layout('layouts.guest')] class extends Component
                     <x-input-error :messages="$errors->get('form.password')" class="mt-2 text-sm text-red-500" />
                 </div>
 
-                <!-- Styled remember me checkbox with elegant appearance -->
+                <!-- Remember me -->
                 <div class="flex items-center justify-between">
                     <label for="remember" class="inline-flex items-center cursor-pointer">
                         <input 
@@ -105,7 +106,7 @@ new #[Layout('layouts.guest')] class extends Component
                     @endif
                 </div>
 
-                <!-- Applied btn-elegant styling to login button with full width -->
+                <!-- Sign in button -->
                 <button 
                     type="submit" 
                     class="btn-elegant w-full mt-8 bg-gradient-to-r from-champagne-gold to-pastel-blue text-soft-navy font-semibold shadow-elegant hover:shadow-elegant-lg"

@@ -2,7 +2,7 @@
         <div class="max-w-4xl">
             <div class="inline-flex items-center space-x-3 mb-3">
                 <div class="w-12 h-12 bg-gradient-to-br from-[var(--warm-gold)] to-amber-500 rounded-2xl flex items-center justify-center shadow-lg">
-                    <svg class="w-6 h-6 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg class="w-6 h-6 from-blue-900 to-blue-950" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
                     </svg>
                 </div>
@@ -88,23 +88,22 @@
         {{ $candidate->description }}
     </p>
 
-    <!-- BUTTON (ALWAYS AT BOTTOM) -->
-    <div class="mt-auto">
-        <a href="{{ route('candidate.detail', $candidate->id) }}" 
-           class="inline-flex items-center justify-center w-full px-6 py-3.5
-                  bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600
-                  from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 font-bold text-sm rounded-2xl
-                  transition-all duration-300 space-x-2
-                 transform hover:scale-105">
-            <span>Lihat Profil Lengkap</span>
-            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1"
-                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-            </svg>
-        </a>
-    </div>
-</div>
+                        <!-- BUTTON (ALWAYS AT BOTTOM) -->
+                        <div class="">
+                            <a href="{{ route('candidate.detail', $candidate->id) }}" 
+                            class="inline-flex items-center justify-center w-full px-6 py-3.5
+                                    from-blue-900 to-blue-950 font-bold text-sm rounded-2xl
+                                    transition-all duration-300 space-x-2
+                                    transform hover:scale-105">
+                                <span>Lihat Profil Lengkap</span>
+                                <svg class="w-5 h-5 transition-transform group-hover:translate-x-1"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
 
                     </div>
                 @empty

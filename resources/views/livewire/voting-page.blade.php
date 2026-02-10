@@ -7,7 +7,7 @@
                 <span class="text-sm font-bold text-gray-700">VOTING AKTIF</span>
             </div> -->
             <h2
-                class="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-3">
+                class="text-5xl font-bold bg-gradient-to-r from-blue-900 to-blue-950 to-blue-600 bg-clip-text text-transparent mb-3">
                 Pilih Kandidat Anda
             </h2>
             <p class="text-xl text-gray-600">Gunakan hak suara Anda dengan bijak</p>
@@ -55,11 +55,11 @@
                     <!-- Selected Badge -->
                     @if($selectedCandidate == $candidate->id)
                     <div
-                        class="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-blue-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-4 py-2 rounded-xl shadow-lg flex items-center gap-2 animate-bounce">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-blue-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-900 to-blue-950 to-blue-600 px-4 py-2 rounded-xl shadow-lg flex items-center gap-2 animate-bounce">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
-                        <span class="font-bold">DIPILIH</span>
+                        <span class="font-bold text-white">DIPILIH</span>
                     </div>
                     @endif
 
@@ -91,7 +91,7 @@
 
                     @if($selectedCandidate == $candidate->id)
                     <div
-                        class="text-red-600 mt-4 bg-gradient-to-r from-blue-500 to-blue-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-4 py-3 rounded-xl text-center font-bold shadow-lg flex items-center justify-center gap-2">
+                        class="text-white mt-4 bg-gradient-to-r from-blue-500 to-blue-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-900 to-blue-950 to-blue-600 px-4 py-3 rounded-xl text-center font-bold shadow-lg flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -130,7 +130,7 @@
         flex items-center justify-center
         w-full
         px-6 py-4
-        bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600
+        bg-gradient-to-r from-blue-900 to-blue-950 to-blue-600
         text-white font-bold text-base
         rounded-xl
         shadow-lg

@@ -50,9 +50,9 @@
                             Dashboard
                         </x-nav-link>
 
-                        <x-nav-link :href="route('candidates')" :active="request()->routeIs('candidates.*')"
+                        <x-nav-link :href="route('voting.page')" :active="request()->routeIs('voting.page')"
                             class="elegant-nav-link">
-                            Kandidat
+                            Voting
                         </x-nav-link>
                         @endif
                     </div>
@@ -110,8 +110,8 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('candidates')" :active="request()->routeIs('candidates.*')">
-                {{ __('Kandidat') }}
+            <x-responsive-nav-link :href="route('voting.page')" :active="request()->routeIs('voting.page')">
+                {{ __('Voting') }}
             </x-responsive-nav-link>
         </div>
 

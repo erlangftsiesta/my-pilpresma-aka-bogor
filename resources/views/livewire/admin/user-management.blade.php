@@ -5,19 +5,19 @@
             <div class="bg-gradient-to-r from-slate-800 to-slate-700 p-6">
                 <div class="flex justify-between items-center">
                     <div>
-                        <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 mb-1">Manajemen User</h3>
+                        <h3 class="text-2xl font-bold text-white mb-1">Manajemen User</h3>
                         <p class="text-slate-300 text-sm">Kelola data pengguna sistem voting</p>
                     </div>
                     <div class="flex gap-3">
                         <button wire:click="export" 
-                            class="bg-green-500 hover:bg-green-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-10 py-2.5 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                            class="bg-green-500 hover:bg-green-600 font-bold from-blue-900 to-blue-950 px-10 py-2.5 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                             </svg>
                             Export Excel
                         </button>
                         <button wire:click="create" 
-                            class="bg-blue-500 hover:bg-blue-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-10 py-2.5 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                            class="bg-blue-500 hover:bg-blue-600 font-bold from-blue-900 to-blue-950 px-10 py-2.5 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                             </svg>
@@ -110,7 +110,7 @@
                         <tr class="hover:bg-gradient-to-r hover:from-blue-50 hover:to-slate-50 transition-colors duration-150">
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 font-bold shadow-md">
+                                    <div class="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center from-blue-900 to-blue-950 text-white font-bold shadow-md">
                                         {{ strtoupper(substr($user->username, 0, 1)) }}
                                     </div>
                                     <span class="font-semibold text-gray-800">{{ $user->username }}</span>
@@ -128,15 +128,15 @@
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <span class="px-3 py-1.5 text-xs font-bold rounded-lg shadow-sm
                                     {{ $user->role == 'admin' 
-                                        ? 'bg-gradient-to-r from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600' 
-                                        : 'bg-gradient-to-r from-blue-500 to-blue-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600' }}">
+                                        ? 'font-bold bg-gradient-to-r from-blue-900 to-blue-950 text-white' 
+                                        : 'from-blue-500 to-blue-600 font-bold bg-gradient-to-r from-blue-900 to-blue-950 text-white' }}">
                                     {{ strtoupper($user->role) }}
                                 </span>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm">
                                 <div class="flex gap-2">
                                     <button wire:click="edit({{ $user->id }})"
-                                        class="bg-blue-500 hover:bg-blue-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
+                                        class="bg-blue-500 hover:bg-blue-600 font-bold from-blue-900 to-blue-950 px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                         </svg>
@@ -144,7 +144,7 @@
                                     </button>
                                     <button wire:click="delete({{ $user->id }})"
                                         onclick="return confirm('Yakin hapus user ini?')"
-                                        class="bg-red-500 hover:bg-red-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
+                                        class="bg-red-500 hover:bg-red-600 font-bold from-blue-900 to-blue-950 px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                         </svg>
@@ -170,7 +170,7 @@
         <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full transform animate-slideUp">
             <!-- Modal Header -->
             <div class="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-t-2xl">
-                <h3 class="text-2xl font-bold from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 flex items-center gap-3">
+                <h3 class="text-2xl font-bold text-white font-bold from-blue-900 to-blue-950 flex items-center gap-3">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
@@ -280,7 +280,7 @@
 
                 <div class="flex gap-3 pt-4">
                     <button type="submit" 
-                        class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2">
+                        class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold from-blue-900 to-blue-950 px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>

@@ -16,13 +16,17 @@
 
 /* Typography - Refined and readable */
 body {
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    font-family:
+        "Open Sans",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
         sans-serif;
     color: var(--soft-navy);
     line-height: 1.7;
     font-weight: 400;
 }
-
+p,
 h1,
 h2,
 h3,

@@ -6,12 +6,12 @@
                 <div class="flex justify-between items-center">
                     <div>
                         <h3
-                            class="text-2xl font-bold from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 mb-1">
+                            class="text-2xl font-bold text-white font-bold from-blue-900 to-blue-950 mb-1">
                             Manajemen Kandidat</h3>
                         <p class="text-slate-300 text-sm">Kelola data kandidat pemilihan</p>
                     </div>
                     <button wire:click="create"
-                        class="bg-blue-500 hover:bg-blue-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                        class="bg-blue-500 hover:bg-blue-600 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950 px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                         </svg>
@@ -77,7 +77,7 @@
                         <!-- Action Buttons -->
                         <div class="flex gap-2 mt-4">
                             <button wire:click="edit({{ $candidate->id }})"
-                                class="flex-1 bg-blue-500 hover:bg-blue-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-4 py-2.5 rounded-xl text-sm font-semibold shadow hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
+                                class="flex-1 bg-blue-500 hover:bg-blue-600 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950 px-4 py-2.5 rounded-xl text-sm font-semibold shadow hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -86,7 +86,7 @@
                             </button>
                             <button wire:click="delete({{ $candidate->id }})"
                                 onclick="return confirm('Yakin hapus kandidat ini?')"
-                                class="flex-1 bg-red-500 hover:bg-red-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-4 py-2.5 rounded-xl text-sm font-semibold shadow hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
+                                class="flex-1 bg-red-500 hover:bg-red-600 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950 px-4 py-2.5 rounded-xl text-sm font-semibold shadow hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
@@ -109,7 +109,7 @@
             <!-- Modal Header -->
             <div class="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-t-2xl">
                 <h3
-                    class="text-2xl font-bold from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600flex items-center gap-3">
+                    class="text-2xl font-bold font-bold text-white flex items-center gap-3">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -233,7 +233,7 @@
                         <img src="{{ Storage::url($existingPhoto) }}"
                             class="w-40 h-40 object-cover rounded-xl shadow-lg border-4 border-white">
                         <div
-                            class="absolute -bottom-2 -right-2 bg-blue-500 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 text-xs font-bold px-3 py-1 rounded-lg shadow">
+                            class="absolute -bottom-2 -right-2 bg-blue-500 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950 text-xs font-bold px-3 py-1 rounded-lg shadow">
                             Foto Saat Ini
                         </div>
                     </div>
@@ -241,7 +241,7 @@
 
                     <div class="relative">
                         <input wire:model="photo" type="file" accept="image/*"
-                            class="w-full px-4 py-3 border-2 border-dashed border-gray-300 rounded-xl focus:ring-4 focus:ring-blue-100 focus:border-blue-500 transition-all file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-blue-500 file:from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 file:font-semibold hover:file:bg-blue-600 file:cursor-pointer cursor-pointer">
+                            class="w-full px-4 py-3 border-2 border-dashed border-gray-300 rounded-xl focus:ring-4 focus:ring-blue-100 focus:border-blue-500 transition-all file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-blue-900 file:from-blue-500 to-blue-600 font-bold from-blue-900 to-blue-950 file:font-semibold hover:file:bg-blue-600 file:cursor-pointer cursor-pointer text-white">
                     </div>
 
                     @error('photo')
@@ -260,7 +260,7 @@
                         <img src="{{ $photo->temporaryUrl() }}"
                             class="w-40 h-40 object-cover rounded-xl shadow-lg border-4 border-white">
                         <div
-                            class="absolute -bottom-2 -right-2 bg-green-500 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 text-xs font-bold px-3 py-1 rounded-lg shadow flex items-center gap-1">
+                            class="absolute -bottom-2 -right-2 bg-green-500 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950 text-xs font-bold px-3 py-1 rounded-lg shadow flex items-center gap-1">
                             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 13l4 4L19 7" />
@@ -274,7 +274,7 @@
                 <!-- Action Buttons -->
                 <div class="flex gap-3 pt-4 border-t">
                     <button type="submit"
-                        class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2">
+                        class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950 px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2 text-white">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>

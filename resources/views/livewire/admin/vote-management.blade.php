@@ -5,11 +5,11 @@
             <div class="bg-gradient-to-r from-slate-800 to-slate-700 p-6">
                 <div class="flex justify-between items-center">
                     <div>
-                        <h3 class="text-2xl font-bold from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600  mb-1">Data Votes</h3>
+                        <h3 class="text-2xl font-bold text-white mb-1">Data Votes</h3>
                         <p class="text-slate-300 text-sm">Rekam jejak suara pemilih</p>
                     </div>
                     <button wire:click="export" 
-                        class="bg-green-500 hover:bg-green-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600  px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                        class="bg-green-500 hover:bg-green-600 from-blue-900 to-blue-950  px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
@@ -95,13 +95,13 @@
                         @foreach($votes as $index => $vote)
                         <tr class="hover:bg-gradient-to-r hover:from-blue-50 hover:to-slate-50 transition-colors duration-150">
                             <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600  font-bold text-sm shadow">
+                                <div class="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg from-blue-900 to-blue-950 text-white font-bold text-sm shadow">
                                     {{ $votes->firstItem() + $index }}
                                 </div>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600  font-bold shadow-md">
+                                    <div class="w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center from-blue-900 to-blue-950 text-white font-bold shadow-md">
                                         {{ strtoupper(substr($vote->user->nama_lengkap, 0, 1)) }}
                                     </div>
                                     <span class="font-semibold text-gray-800">{{ $vote->user->nama_lengkap }}</span>
@@ -129,7 +129,7 @@
                             <td class="px-6 py-4 whitespace-nowrap text-sm">
                                 <button wire:click="delete({{ $vote->id }})"
                                     onclick="return confirm('Yakin hapus vote ini?')"
-                                    class="bg-red-500 hover:bg-red-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
+                                    class="bg-red-500 hover:bg-red-600 from-blue-900 to-blue-950 px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                     </svg>

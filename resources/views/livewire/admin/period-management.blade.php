@@ -3,7 +3,8 @@
         <!-- Status Card -->
         <div class="bg-white rounded-2xl shadow-xl mb-6 overflow-hidden">
             <div class="bg-gradient-to-r from-slate-800 to-slate-700 p-6">
-                <h3 class="text-2xl font-bold from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 flex items-center gap-3">
+                <h3 class="text-2xl font-bold from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950 text-white
+ flex items-center gap-3">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -42,7 +43,8 @@
                     <div class="ml-6">
                         @if($isOpen)
                         <div class="bg-gradient-to-r from-green-500 to-emerald-600 px-8 py-4 rounded-2xl shadow-lg">
-                            <div class="flex items-center gap-3 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600">
+                            <div class="flex items-center gap-3 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+">
                                 <!-- <div class="relative">
                                     <div class="w-4 h-4 bg-white rounded-full animate-pulse"></div>
                                     <div class="absolute inset-0 w-4 h-4 bg-white rounded-full animate-ping"></div>
@@ -52,11 +54,12 @@
                         </div>
                         @else
                         <div class="bg-gradient-to-r from-red-500 to-red-600 px-8 py-4 rounded-2xl shadow-lg">
-                            <div class="flex items-center gap-3 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600">
+                            <div class="flex items-center gap-3 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                                 </svg>
-                                <span class="text-lg font-bold">🔴 VOTING DITUTUP</span>
+                                <span class="text-lg font-bold text-white">🔴 VOTING DITUTUP</span>
                             </div>
                         </div>
                         @endif
@@ -83,11 +86,13 @@
             <div class="bg-gradient-to-r from-slate-800 to-slate-700 p-6">
                 <div class="flex justify-between items-center">
                     <div>
-                        <h3 class="text-2xl font-bold from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 mb-1">Manajemen Periode Voting</h3>
+                        <h3 class="text-2xl font-bold from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950 text-white
+ mb-1">Manajemen Periode Voting</h3>
                         <p class="text-slate-300 text-sm">Atur jadwal pembukaan dan penutupan voting</p>
                     </div>
                     <button wire:click="create" 
-                        class="bg-blue-500 hover:bg-blue-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
+                        class="bg-blue-500 hover:bg-blue-600 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+ px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                         </svg>
@@ -162,7 +167,8 @@
                             @endphp
                             <tr class="hover:bg-gradient-to-r hover:from-blue-50 hover:to-slate-50 transition-colors duration-150">
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-slate-400 to-slate-600 rounded-lg from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 font-bold text-sm shadow">
+                                    <div class="flex items-center justify-center w-10 h-10 bg-gradient-to-br from-slate-400 to-slate-600 rounded-lg from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950 text-white
+ font-bold text-sm shadow">
                                         {{ $period->id }}
                                     </div>
                                 </td>
@@ -188,19 +194,22 @@
                                 </td>
                                 <td class="px-6 py-4 whitespace-nowrap">
                                     @if($status == 'active')
-                                    <span class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 shadow-md flex items-center gap-2 w-fit">
+                                    <span class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+ shadow-md text-white flex items-center gap-2 w-fit">
                                         <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                         AKTIF
                                     </span>
                                     @elseif($status == 'upcoming')
-                                    <span class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 shadow-md flex items-center gap-2 w-fit">
+                                    <span class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+ shadow-md text-white flex items-center gap-2 w-fit">
                                         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
                                         AKAN DATANG
                                     </span>
                                     @else
-                                    <span class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-gray-400 to-gray-500 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 shadow-md flex items-center gap-2 w-fit">
+                                    <span class="px-4 py-2 text-xs font-bold rounded-xl bg-gradient-to-r from-gray-400 to-gray-500 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+ shadow-md text-white flex items-center gap-2 w-fit">
                                         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -211,7 +220,8 @@
                                 <td class="px-6 py-4 whitespace-nowrap text-sm">
                                     <div class="flex gap-2">
                                         <button wire:click="edit({{ $period->id }})" 
-                                            class="bg-blue-500 hover:bg-blue-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
+                                            class="bg-blue-500 hover:bg-blue-600 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+ px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
                                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                             </svg>
@@ -219,7 +229,8 @@
                                         </button>
                                         <button wire:click="delete({{ $period->id }})" 
                                             onclick="return confirm('Yakin hapus periode ini?')"
-                                            class="bg-red-500 hover:bg-red-600 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
+                                            class="bg-red-500 hover:bg-red-600 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+ px-4 py-2 rounded-lg font-semibold shadow hover:shadow-md transition-all duration-200 flex items-center gap-1.5">
                                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                             </svg>
@@ -241,7 +252,8 @@
         <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full transform animate-slideUp">
             <!-- Modal Header -->
             <div class="bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-t-2xl">
-                <h3 class="text-2xl font-bold from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 flex items-center gap-3">
+                <h3 class="text-2xl font-bold from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+ flex items-center text-white gap-3">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -290,7 +302,8 @@
                 
                 <div class="flex gap-3 pt-4 border-t">
                     <button type="submit" 
-                        class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 from-purple-500 to-purple-600 font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2">
+                        class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 from-purple-500 to-purple-600 font-bold from-blue-900 to-blue-950
+ px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center text-white justify-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                         </svg>
