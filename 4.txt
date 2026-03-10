@@ -1,0 +1,56 @@
+1	Analisis Kimia	2219024	Achmed Zakky Zamani	L	B
+2	Analisis Kimia	2219026	AFIFAH FATIN	P	C
+3	Analisis Kimia	2219046	BINTANG FADILLAH	L	A
+4	Analisis Kimia	2219092	Kevin Putrananda	L	A
+5	Analisis Kimia	2219112	Muhamad Faris Adzikri	L	C
+6	Analisis Kimia	2219143	PUSPITA ERAWATI SURBAKTI	P	A
+7	Analisis Kimia	2219150	RAKA MULYA OCTAMA	L	C
+8	Analisis Kimia	2219151	RAKHMILLAH FATIKHANNISA RAMADHIANI	P	C
+9	Analisis Kimia	2260016	FIFI NURAINI	P	H
+10	Analisis Kimia	2260018	FIRZA FARIZ	L	H
+11	Analisis Kimia	2260020	HAMDANNI SHIDDIQ	L	H
+12	Analisis Kimia	2260021	HANNA HANIFA	P	H
+13	Analisis Kimia	2260029	MUHAMMAD LUTHFI	L	H
+14	Analisis Kimia	2260030	MUHAMMAD ZARIR SHOLIKH	L	H
+15	Analisis Kimia	2260038	PUTRI NURAINI	P	H
+16	Analisis Kimia	2260043	REFIZA FAUZIAH	P	H
+17	Analisis Kimia	2260045	REVIZIA BELLAMY	P	H
+18	Nano Teknologi Pangan	2250026	AFIFAH HURIYYAH	P	G
+19	Nano Teknologi Pangan	2250027	ALFIAN FADHILAH ALMINDA	L	G
+20	Nano Teknologi Pangan	2250029	ANISSYA DWI KUSUMANINGRUM WIBISONO	P	G
+21	Nano Teknologi Pangan	2250030	APRILIA NURCAHYANTI	P	G
+22	Nano Teknologi Pangan	2250031	Aqilah Nursakha	P	G
+23	Nano Teknologi Pangan	2250032	Arzzaq Imanda Prianditya	L	G
+24	Nano Teknologi Pangan	2250033	ASYIFA VEREND	P	G
+25	Nano Teknologi Pangan	2250034	Aulia Nur Sabrina	P	G
+26	Nano Teknologi Pangan	2250035	Aulia Syifa Hardianti	P	G
+27	Nano Teknologi Pangan	2250036	Azzahra Tiara Putri Arinda	P	G
+28	Nano Teknologi Pangan	2250038	Firza Khalda Alisa	P	G
+29	Nano Teknologi Pangan	2250039	Gadis Amelia Lailaturrahmah	P	G
+30	Nano Teknologi Pangan	2250040	GHAIDA ZAHWA PUTRI WAHYUDI	P	G
+31	Nano Teknologi Pangan	2250041	GHINA FAYZA NAFIRA	P	G
+32	Nano Teknologi Pangan	2250042	HIFZHI KHOIRUDDIN	L	G
+33	Nano Teknologi Pangan	2250043	IKHSAN AZIS MAULA HERMAWAN	L	G
+34	Nano Teknologi Pangan	2250044	INAYATUL MUNAWAROH	P	G
+35	Nano Teknologi Pangan	2250045	Liviana Dias Fadhila	P	G
+36	Nano Teknologi Pangan	2250046	MITHA YUSTIKA SYARI	P	G
+37	Nano Teknologi Pangan	2250047	MUHAMMAD FAISHAL RAHMAN	L	G
+38	Nano Teknologi Pangan	2250048	MUHAMMAD RAFFLY SUPRIYADI	L	G
+39	Nano Teknologi Pangan	2250049	Nada Zahira Manan	P	G
+40	Nano Teknologi Pangan	2250050	Naura Athira Putri Siregar	P	G
+41	Nano Teknologi Pangan	2250051	NOVI NURPADILAH	P	G
+42	Nano Teknologi Pangan	2250052	PRADNADIA PUTRI HADRIANSYAH	P	G
+43	Nano Teknologi Pangan	2250053	PUTRI APRILIA	P	G
+44	Nano Teknologi Pangan	2250054	RADEN MUHAMMAD DAFFA RAMADHAN PRAYOGA	L	G
+45	Nano Teknologi Pangan	2250058	SIFA RESTI NUR RANYANTI	P	G
+46	Nano Teknologi Pangan	2250059	SITI PUTRI INTANSARI	P	G
+47	Nano Teknologi Pangan	2250060	Siti Sopia Nuragiastuti	P	G
+48	Nano Teknologi Pangan	2250062	SYIFA NUR'AFIYAH	P	G
+49	Nano Teknologi Pangan	2250063	Tania Salsabila Anindya	P	G
+50	Nano Teknologi Pangan	2250064	TIARA PUTRI PATINASARANI	P	G
+51	Nano Teknologi Pangan	2250066	Yasir Ilyas Trikurnianto	L	G
+52	Nano Teknologi Pangan	2250067	YUDHISTIRA DIMAS NUGROHO	L	G
+53	Nano Teknologi Pangan	2250068	YUYUN YUNINGSIH	P	G
+54	Nano Teknologi Pangan	2250069	ZALFA JAWZA KAMILA	P	G
+55	Penjaminan Mutu Industri Pangan	2220458	INTAN AULIA SARI	P	PMIP
+56	Pengolahan Limbah Industri	2230456	MUHAMMAD RADITYA ARKANANTA	L	PLI
